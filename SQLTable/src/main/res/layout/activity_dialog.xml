@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".DialogActivity">
+
+
+    <LinearLayout
+            android:id="@+id/edit_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+                android:id="@+id/lbl_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last name"
+                android:textSize="@dimen/text_size"/>
+
+        <EditText
+                android:id="@+id/txt_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layout_weight="1"
+                style="@style/EditText.Table"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/edit_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/edit_last"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+                android:id="@+id/lbl_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First name"
+                android:textSize="@dimen/text_size"/>
+
+        <EditText
+                android:id="@+id/txt_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layout_weight="1"
+                style="@style/EditText.Table"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/edit_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/edit_first"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+                android:id="@+id/lbl_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="@dimen/text_size"/>
+
+        <EditText
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_weight="1"
+                style="@style/EditText.Table"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/edit_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/edit_age"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+        <TextView
+                android:id="@+id/lbl_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street"
+                android:textSize="@dimen/text_size"/>
+
+        <EditText
+                android:id="@+id/txt_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layout_weight="1"
+                style="@style/EditText.Table"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle"
+            android:divider="?android:attr/dividerVertical"
+            android:showDividers="beginning"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingTop="10dp"
+            android:layout_below="@id/edit_street">
+
+        <Button
+                android:id="@+id/btnOK"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/Button.Table"
+                android:text="OK"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/btnCANCEL"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/Button.Table"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

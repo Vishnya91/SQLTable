@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SQLTable/SQLTable.iml" filepath="$PROJECT_DIR$/SQLTable/SQLTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLTableProject.iml" filepath="$PROJECT_DIR$/SQLTableProject.iml" />
+    </modules>
+  </component>
+</project>
+

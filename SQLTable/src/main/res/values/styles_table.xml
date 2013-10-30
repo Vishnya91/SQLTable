@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Table" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_table</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Table</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Table</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Table</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_table</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_table</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Table</item>
+        <item name="android:editTextStyle">@style/EditText.Table</item>
+        <item name="android:editTextBackground">@drawable/edit_text_holo_dark</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_holo</item>
+        <item name="android:dialogTheme">@style/Theme.Table.Dialog</item>
+        <item name="android:buttonStyle">@style/Button.Table</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Table.Widget</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Table" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_table</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_table</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_table</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Table" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_table</item>
+    </style>
+
+    <style name="PopupMenu.Table" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_table</item>
+    </style>
+
+    <style name="DropDownListView.Table" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_table</item>
+    </style>
+
+
+    <style name="ActionButton.CloseMode.Table" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_table</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Table.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Table</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Table</item>
+    </style>
+
+    <style name="EditText.Table" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edit_text_holo_dark</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TextView.Table" parent="android:Widget.TextView">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Theme.Table.Dialog" parent="android:Theme.Holo.Dialog.NoActionBar.MinWidth">
+    </style>
+
+    <style name="Button.Table" parent="android:Widget.Holo.Button.Borderless">
+        <item name="android:colorPressedHighlight">@color/pressed_table</item>
+        <item name="android:colorActivatedHighlight">@color/pressed_table</item>
+    </style>
+</resources>

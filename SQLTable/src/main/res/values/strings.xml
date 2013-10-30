@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Table</string>
+    <string name="id">ID</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="age">Age</string>
+    <string name="street">Street</string>
+    <string name="title_activity_dialog">Add or Edit</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

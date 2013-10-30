@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_add"
+          android:icon="@drawable/action_add"
+          android:showAsAction="always"
+            android:title="Add"/>
+
+    <item android:id="@+id/action_read"
+          android:icon="@drawable/ic_action_navigation_refresh"
+          android:showAsAction="always"
+            android:title="Read"/>
+
+    <item android:id="@+id/action_clear"
+          android:icon="@drawable/ic_action_content_discard"
+          android:showAsAction="always"
+          android:title="Clear Database"/>
+</menu>
